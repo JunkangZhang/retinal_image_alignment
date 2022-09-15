@@ -34,10 +34,11 @@ The objective of the project is to develop deep-learning based multimodal retina
 <!-- {% assign papers_by_year=site.data.papers.papers | group_by: "year" | sort:"year", "last" %} -->
 <!-- {% assign papers=site.data.papers.papers | sort:"year", "last" | group_by: "year" %} -->
 {% for paper_this_year in papers_by_year %}
-  #### {{paper_this_year.name}}
   {% for paper in paper_this_year.items %}
-    **{{paper.title}}**
-    {{paper.authors}} <br>
-    {{paper.journal}}, {{paper.year}}.
+    {% if paper.conference %}
+      **{{paper.title}}** <br>
+      {{paper.authors}} <br>
+      {{paper.journal}}, {{paper.year}}.
+    {% endif %}
   {% endfor %}
 {% endfor %}
