@@ -1,5 +1,5 @@
 <!-- ---
-<!-- title: Multimodal Retina Image Alignment and Applications -->
+title: Multimodal Retina Image Alignment and Applications
 --- -->
 
 <!-- # Multimodal Retina Image Alignment and Applications -->
@@ -14,7 +14,7 @@
  <hr>
 
 ## Team members <a name="people"></a>
-Prof. Truong Q. Nguyen (PI) <br>
+{{site.people.tqn.title}} [{{site.people.tqn.name}}]({{site.people.tqn.homepage}}) (PI) <br>
 Prof. William R. Freeman (Co-PI) <br>
 Prof. Dirk-Uwe Bartsch (Co-PI) <br>
 Prof. Cheolhong An (Co-PI)
