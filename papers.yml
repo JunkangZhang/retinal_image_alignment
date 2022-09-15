@@ -1,0 +1,28 @@
+papers:
+  -
+    cite: 2022TIP_zhang_twostep
+    topic: retina
+    title: Two-Step Registration on Multi-Modal Retinal Images via Deep Neural Networks
+    authors: Junkang Zhang, Yiqian Wang, Ji Dai, Melina Cavichini, Dirk-Uwe G Bartsch, William R Freeman, Truong Q Nguyen, Cheolhong An
+    journal: IEEE Transactions on Image Processing
+    abstract: abstract placeholder
+    year: 2022
+    doi: https://doi.org/10.1109/TIP.2021.3135708
+  -
+    cite: 2021TIP_wang_robust
+    topic: retina
+    title: Robust content-adaptive global registration for multimodal retinal images using weakly supervised deep-learning framework
+    authors: Yiqian Wang, Junkang Zhang, Melina Cavichini, Dirk-Uwe G Bartsch, William R Freeman, Truong Q Nguyen, Cheolhong An
+    journal: IEEE Transactions on Image Processing
+    abstract: abstract placeholder
+    year: 2021
+    doi: https://doi.org/10.1109/TIP.2021.3058570
+  -
+    cite: 2021TIP_wang_robust
+    topic: retina
+    title: A genetics-motivated unsupervised model for tri-subject kinship verification
+    authors: Junkang Zhang, Siyu Xia, Hong Pan, Alex Kai Qin
+    conference: IEEE International Conference on Image Processing (ICIP)
+    abstract: abstract placeholder
+    year: 2016
+    doi: https://doi.org/10.1109/ICIP.2016.7532893
