@@ -24,12 +24,11 @@ title: Multimodal Retina Image Alignment and Applications
 {% endfor %}
 
 ### Research fellows
-{% assign fellows_str = site.data.people.fellows | join: ", " %}
+<!-- {% assign fellows_str = site.data.people.fellows | join: ", " %}
+{{fellows_str}} <br> -->
+{% assign fellows_list = site.data.people.fellows | map: "name" %}
+{% assign fellows_str = fellows_list | join: ", " %}
 {{fellows_str}} <br>
-<!-- {% assign fellows_str = '' %}
-{% for pi in site.data.people.fellows %}
-  fellow
-{% endfor %} -->
 
 ### Students
 Yiqian Wang <br>
