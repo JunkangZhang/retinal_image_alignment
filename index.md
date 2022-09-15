@@ -4,20 +4,27 @@ title: Multimodal Retina Image Alignment and Applications
 
 <!-- # Multimodal Retina Image Alignment and Applications -->
 
-<!-- <table>
+<table>
    <tr>
      <td><a href=".#people">People</a></td>
      <td><a href=".#goals">Goals</a></td>
      <td><a href=".#results">Results</a></td>
    </tr>
  </table>
- <hr> -->
+ <hr>
 
 ## Team members <a name="people"></a>
-{{site.data.people.tqn.title}} [{{site.data.people.tqn.name}}]({{site.data.people.tqn.homepage}}) (PI) <br>
+{% for pi in site.data.people.pi %}
+  {% if pi.homepage %}
+{{pi.title}} [{{pi.name}}]({{pi.homepage}}) ({{pi.role}})<br>
+  {% else %}
+{{pi.title}} {{pi.name}} ({{pi.role}})<br>
+  {% endif %}
+{% endfor %}
+<!-- {{site.data.people.tqn.title}} [{{site.data.people.tqn.name}}]({{site.data.people.tqn.homepage}}) (PI) <br>
 Prof. William R. Freeman (Co-PI) <br>
 Prof. Dirk-Uwe Bartsch (Co-PI) <br>
-Prof. Cheolhong An (Co-PI)
+Prof. Cheolhong An (Co-PI) -->
 
 #### Research fellows
 Please list all of the postdocs that work with us on the project
@@ -30,11 +37,11 @@ Junkang Zhang <br>
 The objective of the project is to develop deep-learning based multimodal retinal image registration methods to help the ophthalmologist to quickly detect and diagnose retinal diseases.  Four major goals: (1). Collect and prepare a wide range of retina images/data to support algorithm development and testing; (2). Develop algorithm to align ultra-widefield, color fundus and multicolor images to help with early diagnosis of cardiovascular diseases, (3).  Develop segmentation algorithm for OCT volumes with the help of motion correction, and (4).  Evaluate and assess the ability of goals 2 and 3 in diagnosis evaluation using human experts (clinical specialist). <br>
 
 ## Results (Papers) <a name="results"></a>
-{% assign papers_by_year=site.data.papers.papers | group_by: "year" | sort:"name", "last" %}
+{% assign papers_by_year=site.data.papers.papers | group_by: "year" | sort:"name", "first" %}
 <!-- {% assign papers=site.data.papers.papers | sort:"year", "last" | group_by: "year" %} -->
 {% for paper_this_year in papers_by_year %}
-  {% for paper in paper_this_year.items %}
 #### paper_this_year.name
+  {% for paper in paper_this_year.items %}
     {% if paper.journal %}
 **{{paper.title}}** <br>
 {{paper.authors}} <br>
