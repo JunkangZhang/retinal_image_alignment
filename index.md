@@ -14,7 +14,7 @@ title: Multimodal Retina Image Alignment and Applications
  <hr>
 
 ## Team members <a name="people"></a>
-<p> {{site.people.tqn.title}} [{{site.people.tqn.name}}]({{site.people.tqn.homepage}}) (PI) </p><br>
+{{site.data.people.tqn.title}} [{{site.data.people.tqn.name}}]({{site.data.people.tqn.homepage}}) (PI) <br>
 Prof. William R. Freeman (Co-PI) <br>
 Prof. Dirk-Uwe Bartsch (Co-PI) <br>
 Prof. Cheolhong An (Co-PI)
