@@ -17,12 +17,31 @@ papers:
     abstract: abstract placeholder
     year: 2021
     doi: https://doi.org/10.1109/TIP.2021.3058570
-  # -
-  #   cite: 2016ICIP_zhang_tri
-  #   topic: kinship
-  #   title: A genetics-motivated unsupervised model for tri-subject kinship verification
-  #   authors: Junkang Zhang, Siyu Xia, Hong Pan, Alex Kai Qin
-  #   conference: IEEE International Conference on Image Processing (ICIP)
-  #   abstract: abstract placeholder
-  #   year: 2016
-  #   doi: https://doi.org/10.1109/ICIP.2016.7532893
+
+  -
+    cite: 2020ICASSP_wang_robust
+    topic: retina
+    title: A segmentation based robust deep learning framework for multimodal retinal image registration
+    authors: Yiqian Wang, Junkang Zhang, Cheolhong An, Melina Cavichini, Mahima Jhingan, Manuel J. Amador-Patarroyo, Christopher P. Long, Dirk-Uwe G. Bartsch, William R. Freeman, Truong Q. Nguyen
+    conference: IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
+    abstract: abstract placeholder
+    year: 2020
+    doi: https://doi.org/10.1109/ICASSP40776.2020.9054077
+  -
+    cite: 2021EMBC_zhang_distortion
+    topic: retina
+    title: Perspective Distortion Correction for Multi-Modal Registration between Ultra-Widefield and Narrow-Angle Retinal Images
+    authors: Junkang Zhang, Yiqian Wang, Dirk-Uwe G. Bartsch, William R. Freeman, Truong Q. Nguyen, Cheolhong An
+    conference: Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC)
+    abstract: abstract placeholder
+    year: 2021
+    doi: https://doi.org/10.1109/EMBC46164.2021.9631084
+  -
+    cite: 2019ICIP_zhang_style
+    topic: retina
+    title: Joint vessel segmentation and deformable registration on multi-modal retinal images based on style transfer
+    authors: Junkang Zhang, Cheolhong An, Ji Dai, Manuel Amador, Dirk-Uwe Bartsch, Shyamanga Borooah, William R. Freeman, Truong Q. Nguyen
+    conference: IEEE International Conference on Image Processing (ICIP)
+    abstract: abstract placeholder
+    year: 2019
+    doi: https://doi.org/10.1109/ICIP.2019.8802932
