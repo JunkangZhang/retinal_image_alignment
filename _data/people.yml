@@ -4,7 +4,6 @@ pi:
     title: Prof.
     role: PI
     homepage: http://videoprocessing.ucsd.edu/?page_id=40
-    googlescholar: https://scholar.google.com/citations?user=5rjfy4AAAAAJ&hl=en
   -
     name: William R. Freeman
     title: Prof.
@@ -19,3 +18,19 @@ pi:
     name: Cheolhong An
     title: Prof.
     role: Co-PI
+
+fellows:
+  -
+    name: Melina Cavichini-Cordeiro
+  -
+    name: Fritz Gerald P. Kalaw
+  -
+    name: Manuel J. Amador-Patarroyo
+
+student:
+  -
+    name: Yiqian Wang
+    homepage: https://yiqian-wang.github.io/
+  -
+    name: Junkang Zhang
+    homepage: https://junkangzhang.github.io/
