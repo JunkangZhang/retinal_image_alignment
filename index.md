@@ -2,8 +2,6 @@
 title: Multimodal Retina Image Alignment and Applications
 --- -->
 
-<!-- # Multimodal Retina Image Alignment and Applications -->
-
 <table>
    <tr>
      <td><a href=".#people">People</a></td>
@@ -17,22 +15,24 @@ title: Multimodal Retina Image Alignment and Applications
 ### Principal Investigators
 {% for pi in site.data.people.pi %}
   {% if pi.homepage %}
-{{pi.title}} [{{pi.name}}]({{pi.homepage}}) ({{pi.role}}) <br>
+[{{pi.name}}]({{pi.homepage}}) ({{pi.role}})
   {% else %}
-{{pi.title}} {{pi.name}} ({{pi.role}}) <br>
+{{pi.name}} ({{pi.role}})
   {% endif %}
 {% endfor %}
 
 ### Research fellows
-<!-- {% assign fellows_str = site.data.people.fellows | join: ", " %}
-{{fellows_str}} <br> -->
 {% assign fellows_list = site.data.people.fellows | map: "name" %}
 {% assign fellows_str = fellows_list | join: ", " %}
 {{fellows_str}} <br>
+{% for fellow in site.data.people.fellows %}
+{{fellow.name}}
+{% endfor %}
 
 ### Students
-Yiqian Wang <br>
-Junkang Zhang <br>
+{% for student in site.data.people.student %}
+[{{student.name}}]({{student.homepage}})
+{% endfor %}
 
 # Major Goals <a name="goals"></a>
 The objective of the project is to develop deep-learning based multimodal retinal image registration methods to help the ophthalmologist to quickly detect and diagnose retinal diseases.  Four major goals: (1). Collect and prepare a wide range of retina images/data to support algorithm development and testing; (2). Develop algorithm to align ultra-widefield, color fundus and multicolor images to help with early diagnosis of cardiovascular diseases, (3).  Develop segmentation algorithm for OCT volumes with the help of motion correction, and (4).  Evaluate and assess the ability of goals 2 and 3 in diagnosis evaluation using human experts (clinical specialist). <br>
@@ -54,5 +54,6 @@ The objective of the project is to develop deep-learning based multimodal retina
 {{paper.authors}} <br>
 {{paper.conference}}, {{paper.year}}.
     {% endif %}
+
   {% endfor %}
 {% endfor %}

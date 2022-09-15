@@ -1,22 +1,24 @@
 pi:
   -
     name: Truong Q. Nguyen
-    title: Prof.
+    prefix: Prof.
     role: PI
     homepage: http://videoprocessing.ucsd.edu/?page_id=40
   -
     name: William R. Freeman
-    title: Prof.
+    prefix: Prof.
+    suffix: MD
     role: Co-PI
     homepage: https://shileyeye.ucsd.edu/faculty/william-freeman
   -
     name: Dirk-Uwe Bartsch
-    title: Prof.
+    prefix: Prof.
+    suffix: PhD
     role: Co-PI
     homepage: https://shileyeye.ucsd.edu/faculty/dirk-uwe-bartsch
   -
     name: Cheolhong An
-    title: Prof.
+    prefix: Prof.
     role: Co-PI
 
 fellows:
