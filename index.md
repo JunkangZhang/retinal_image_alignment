@@ -30,3 +30,9 @@ Junkang Zhang <br>
 The objective of the project is to develop deep-learning based multimodal retinal image registration methods to help the ophthalmologist to quickly detect and diagnose retinal diseases.  Four major goals: (1). Collect and prepare a wide range of retina images/data to support algorithm development and testing; (2). Develop algorithm to align ultra-widefield, color fundus and multicolor images to help with early diagnosis of cardiovascular diseases, (3).  Develop segmentation algorithm for OCT volumes with the help of motion correction, and (4).  Evaluate and assess the ability of goals 2 and 3 in diagnosis evaluation using human experts (clinical specialist). <br>
 
 ## Results (Papers) <a name="results"></a>
+{% for paper in site.data.papers %}
+  {{paper.title}}
+  {{paper.authors}}
+  {{paper.journal}}
+  {{paper.year}}
+{% endfor %}
