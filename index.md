@@ -23,7 +23,7 @@ title: Multimodal Retina Image Alignment and Applications
 
 ### Research fellows
 {% assign fellows_list = site.data.people.fellows | map: "name" %}
-{% assign fellows_str = fellows_list | join: ", " %}
+{% assign fellows_str = fellows_list | join: " &ensp; " %}
 {{fellows_str}} <br>
 
 <!--
@@ -46,17 +46,24 @@ The objective of the project is to develop deep-learning based multimodal retina
 {% for paper_this_year in papers_by_year %}
 ### {{paper_this_year.name}}
   {% for paper in paper_this_year.items %}
-    {% if paper.journal %}
 **{{paper.title}}** <br>
 {{paper.authors}} <br>
+    {% if paper.journal %}
 {{paper.journal}}, {{paper.year}}.
     {% elsif paper.conference %}
-**{{paper.title}}** <br>
-{{paper.authors}} <br>
 {{paper.conference}}, {{paper.year}}.
     {% endif %}
+    {% if paper.doi %}
+\[[Paper \(doi\)]({{paper.doi}})\] &ensp;
+    {% endif %}
+    {% if paper.supplementary %}
+\[[Supplementary]({{paper.supplementary}})\] &ensp;
+    {% endif %}
+    {% if paper.code %}
+\[[Code]({{paper.code}})\] &ensp;
+    {% endif %}
+<br>
     {% if paper.image_bar %}
-<!-- ![]({{paper.image_bar}}) -->
 <p align="center">
   <img src="{{site.baseurl}}{{paper.image_bar}}" >
 </p>    

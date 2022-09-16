@@ -1,5 +1,17 @@
 papers:
   -
+    cite: 2022TIP_an_selfsupervise
+    topic: retina
+    title: Self-Supervised Rigid Registration for Multimodal Retinal Images
+    authors: Cheolhong An, Yiqian Wang, Junkang Zhang, Truong Q Nguyen
+    journal: IEEE Transactions on Image Processing
+    abstract: abstract placeholder
+    year: 2022
+    doi: https://doi.org/10.1109/TIP.2022.3201476
+
+    image_bar: /images/bar_TIP2022_selfsupervise.png
+
+  -
     cite: 2022TIP_zhang_twostep
     topic: retina
     title: Two-Step Registration on Multi-Modal Retinal Images via Deep Neural Networks
@@ -9,7 +21,8 @@ papers:
     year: 2022
     doi: https://doi.org/10.1109/TIP.2021.3135708
 
-    image_bar: /images/bar_twostep.png
+    image_bar: /images/bar_TIP2022_twostep.png
+
   -
     cite: 2021TIP_wang_robust
     topic: retina
@@ -20,6 +33,8 @@ papers:
     year: 2021
     doi: https://doi.org/10.1109/TIP.2021.3058570
 
+    image_bar: /images/bar_TIP2021_robust.png
+
   -
     cite: 2020ICASSP_wang_robust
     topic: retina
@@ -29,6 +44,9 @@ papers:
     abstract: abstract placeholder
     year: 2020
     doi: https://doi.org/10.1109/ICASSP40776.2020.9054077
+
+    image_bar: /images/bar_ICASSP2020_robust.png
+
   -
     cite: 2021EMBC_zhang_distortion
     topic: retina
@@ -38,6 +56,9 @@ papers:
     abstract: abstract placeholder
     year: 2021
     doi: https://doi.org/10.1109/EMBC46164.2021.9631084
+
+    image_bar: /images/bar_EMBC2021_dc.png
+
   -
     cite: 2019ICIP_zhang_style
     topic: retina
@@ -47,3 +68,8 @@ papers:
     abstract: abstract placeholder
     year: 2019
     doi: https://doi.org/10.1109/ICIP.2019.8802932
+
+    image_bar: /images/bar_ICIP2019_style.png
+
+    code: https://github.com/JunkangZhang/RetinalSegReg
+    supplementary: https://github.com/JunkangZhang/RetinalSegReg/blob/master/ICIP2019_supplementary.pdf
