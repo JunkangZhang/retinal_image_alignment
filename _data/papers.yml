@@ -1,7 +1,7 @@
 papers:
   -
     cite: 2022TIP_an_selfsupervise
-    topic: retina
+    topic: retinal_alignment
     title: Self-Supervised Rigid Registration for Multimodal Retinal Images
     authors: Cheolhong An, Yiqian Wang, Junkang Zhang, Truong Q Nguyen
     journal: IEEE Transactions on Image Processing
@@ -15,7 +15,7 @@ papers:
 
   -
     cite: 2022TIP_zhang_twostep
-    topic: retina
+    topic: retinal_alignment
     title: Two-Step Registration on Multi-Modal Retinal Images via Deep Neural Networks
     authors: Junkang Zhang, Yiqian Wang, Ji Dai, Melina Cavichini, Dirk-Uwe G. Bartsch, William R. Freeman, Truong Q. Nguyen, Cheolhong An
     journal: IEEE Transactions on Image Processing
@@ -29,7 +29,7 @@ papers:
 
   -
     cite: 2021TIP_wang_robust
-    topic: retina
+    topic: retinal_alignment
     title: Robust content-adaptive global registration for multimodal retinal images using weakly supervised deep-learning framework
     authors: Yiqian Wang, Junkang Zhang, Melina Cavichini, Dirk-Uwe G. Bartsch, William R. Freeman, Truong Q. Nguyen, Cheolhong An
     journal: IEEE Transactions on Image Processing
@@ -43,7 +43,7 @@ papers:
 
   -
     cite: 2020ICASSP_wang_robust
-    topic: retina
+    topic: retinal_alignment
     title: A segmentation based robust deep learning framework for multimodal retinal image registration
     authors: Yiqian Wang, Junkang Zhang, Cheolhong An, Melina Cavichini, Mahima Jhingan, Manuel J. Amador-Patarroyo, Christopher P. Long, Dirk-Uwe G. Bartsch, William R. Freeman, Truong Q. Nguyen
     conference: IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
@@ -57,7 +57,7 @@ papers:
 
   -
     cite: 2021EMBC_zhang_distortion
-    topic: retina
+    topic: retinal_alignment
     title: Perspective Distortion Correction for Multi-Modal Registration between Ultra-Widefield and Narrow-Angle Retinal Images
     authors: Junkang Zhang, Yiqian Wang, Dirk-Uwe G. Bartsch, William R. Freeman, Truong Q. Nguyen, Cheolhong An
     conference: Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC)
@@ -71,7 +71,7 @@ papers:
 
   -
     cite: 2019ICIP_zhang_style
-    topic: retina
+    topic: retinal_alignment
     title: Joint vessel segmentation and deformable registration on multi-modal retinal images based on style transfer
     authors: Junkang Zhang, Cheolhong An, Ji Dai, Manuel Amador, Dirk-Uwe Bartsch, Shyamanga Borooah, William R. Freeman, Truong Q. Nguyen
     conference: IEEE International Conference on Image Processing (ICIP)
@@ -84,4 +84,4 @@ papers:
     code: https://github.com/JunkangZhang/RetinalSegReg
     supplementary: https://github.com/JunkangZhang/RetinalSegReg/blob/master/ICIP2019_supplementary.pdf
 
-    abstract: In multi-modal retinal image registration task, there are two major challenges, i.e., poor performance in finding correspondence due to inconsistent features, and lack of labeled data for training learning-based models. In this paper, we propose a joint vessel segmentation and deformable registration model based on CNN for this task, built under the framework of weakly supervised style transfer learning and perceptual loss. In vessel segmentation, a style loss guides the model to generate segmentation maps that look authentic, and helps transform images of different modalities into consistent representations. In deformable registration, a content loss helps find dense correspondence for multi-modal images based on their consistent representations, and improves the segmentation results simultaneously. Experiment results show that our model has better performance than other deformable registration methods in both quantitative and visual evaluations, and the segmentation results also help the rigid transformation. 
+    abstract: In multi-modal retinal image registration task, there are two major challenges, i.e., poor performance in finding correspondence due to inconsistent features, and lack of labeled data for training learning-based models. In this paper, we propose a joint vessel segmentation and deformable registration model based on CNN for this task, built under the framework of weakly supervised style transfer learning and perceptual loss. In vessel segmentation, a style loss guides the model to generate segmentation maps that look authentic, and helps transform images of different modalities into consistent representations. In deformable registration, a content loss helps find dense correspondence for multi-modal images based on their consistent representations, and improves the segmentation results simultaneously. Experiment results show that our model has better performance than other deformable registration methods in both quantitative and visual evaluations, and the segmentation results also help the rigid transformation.
