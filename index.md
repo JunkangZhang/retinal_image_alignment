@@ -14,14 +14,14 @@ title: Multimodal Retina Image Alignment and Applications
 # Team members <a name="people"></a>
 ### Principal Investigators
 {% for pi in site.data.people.pi %}
-  {% if pi.homepage %} [{{pi.name}}]({{pi.homepage}}) ({{pi.role}})  <br>
-  {% else %} {{pi.name}} ({{pi.role}}) {% endif %} <br>
+{% if pi.homepage %} [{{pi.name}}]({{pi.homepage}}) ({{pi.role}})  <br>
+{% else %} {{pi.name}} ({{pi.role}}) {% endif %} <br>
 {% endfor %}
 
 ### Research fellows
 {% assign fellows_list = site.data.people.fellows | map: "name" %}
 {% assign fellows_str = fellows_list | join: ", &ensp; " %}
-{{fellows_str}} <br>
+{{fellows_str}}
 
 <!--
 {% for fellow in site.data.people.fellows %}
@@ -40,20 +40,18 @@ The objective of the project is to develop deep-learning based multimodal retina
 <!-- {% assign papers=site.data.papers.papers | sort:"year", "last" | group_by: "year" %} -->
 {% for paper_this_year in papers_by_year %}
 ### {{paper_this_year.name}}
-  {% for paper in paper_this_year.items %}
+{% for paper in paper_this_year.items %}
 **{{paper.title}}** <br>
 {{paper.authors}} <br>
-{% if paper.journal %} {{paper.journal}}, {{paper.year}}.
-{% elsif paper.conference %} {{paper.conference}}, {{paper.year}}. {% endif %}
+{% if paper.journal %} {{paper.journal}}, {{paper.year}}. {% elsif paper.conference %} {{paper.conference}}, {{paper.year}}. {% endif %} <br>
 {% if paper.doi %} \[[Paper \(doi\)]({{paper.doi}})\] &ensp; {% endif %}
 {% if paper.supplementary %} \[[Supplementary]({{paper.supplementary}})\] &ensp; {% endif %}
 {% if paper.code %} \[[Code]({{paper.code}})\] &ensp; {% endif %}
-<br>
-    {% if paper.image_bar %}
+{% if paper.image_bar %}
 <p align="center">
   <img src="{{site.baseurl}}{{paper.image_bar}}" >
 </p>    
-  {% endif %}
+{% endif %}
 
-  {% endfor %}
+{% endfor %}
 {% endfor %}
