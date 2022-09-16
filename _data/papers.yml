@@ -8,6 +8,8 @@ papers:
     abstract: abstract placeholder
     year: 2022
     doi: https://doi.org/10.1109/TIP.2021.3135708
+
+    image_bar: images/bar_twostep.png
   -
     cite: 2021TIP_wang_robust
     topic: retina
