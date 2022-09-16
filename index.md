@@ -25,13 +25,13 @@ title: Multimodal Retina Image Alignment and Applications
 {% assign fellows_list = site.data.people.fellows | map: "name" %}
 {% assign fellows_str = fellows_list | join: ", " %}
 {{fellows_str}} <br>
-{% for fellow in site.data.people.fellows %}
+<!-- {% for fellow in site.data.people.fellows %}
 {{fellow.name}}
-{% endfor %}
+{% endfor %} -->
 
 ### Students
 {% for student in site.data.people.student %}
-[{{student.name}}]({{student.homepage}})
+[{{student.name}}]({{student.homepage}}) <br>
 {% endfor %}
 
 # Major Goals <a name="goals"></a>
@@ -55,7 +55,7 @@ The objective of the project is to develop deep-learning based multimodal retina
     {% if paper.image_bar %}
 <!-- ![]({{paper.image_bar}}) -->
 <p align="center">
-  <img src={{paper.image_bar}} >
+  <img src="{{paper.image_bar}}" >
 </p>    
   {% endif %}
 
