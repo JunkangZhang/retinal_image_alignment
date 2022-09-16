@@ -48,20 +48,14 @@ The objective of the project is to develop deep-learning based multimodal retina
   {% for paper in paper_this_year.items %}
 **{{paper.title}}** <br>
 {{paper.authors}} <br>
-    {% if paper.journal %}
+{% if paper.journal %}
 {{paper.journal}}, {{paper.year}}.
-    {% elsif paper.conference %}
+{% elsif paper.conference %}
 {{paper.conference}}, {{paper.year}}.
-    {% endif %}
-    {% if paper.doi %}
-\[[Paper \(doi\)]({{paper.doi}})\] &ensp;
-    {% endif %}
-    {% if paper.supplementary %}
-\[[Supplementary]({{paper.supplementary}})\] &ensp;
-    {% endif %}
-    {% if paper.code %}
-\[[Code]({{paper.code}})\] &ensp;
-    {% endif %}
+{% endif %}
+{% if paper.doi %} \[[Paper \(doi\)]({{paper.doi}})\] &ensp; {% endif %}
+{% if paper.supplementary %} \[[Supplementary]({{paper.supplementary}})\] &ensp; {% endif %}
+{% if paper.code %} \[[Code]({{paper.code}})\] &ensp; {% endif %}
 <br>
     {% if paper.image_bar %}
 <p align="center">
