@@ -11,8 +11,8 @@ title: Multimodal Retina Image Alignment and Applications
  </table>
  <hr> -->
 
-<span style="color:blue;font-weight:700;font-size:20px">
-  | [People](#people) | [Goals](#goals) | [Results](#results) |
+<span style="color:blue;font-weight:700;font-size:25px">
+  [People](#people) &ensp; &ensp; [Goals](#goals) &ensp; &ensp; [Results](#results)
 </span>
 
 # Team Members <a name="people"></a>
@@ -44,6 +44,9 @@ The objective of the project is to develop deep-learning based multimodal retina
 {% if paper.supplementary %} **\[[Supplementary]({{paper.supplementary}})\]** &ensp; {% endif %}
 {% if paper.code %} **\[[Code]({{paper.code}})\]** &ensp; {% endif %}
 {% if paper.image_bar %}
+<details>
+	<summary>Abstract</summary>
+  Multimodal retinal imaging plays an important role in ophthalmology. We propose a content-adaptive multimodal retinal image registration method in this paper that focuses on the globally coarse alignment and includes three weakly supervised neural networks for vessel segmentation, feature detection and description, and outlier rejection. We apply the proposed framework to register color fundus images with infrared reflectance and fluorescein angiography images, and compare it with several conventional and deep learning methods. Our proposed framework demonstrates a significant improvement in robustness and accuracy reflected by a higher success rate and Dice coefficient compared with other methods.</details>
 <p align="center">
   <img src="{{site.baseurl}}{{paper.image_bar}}" >
 </p>    
