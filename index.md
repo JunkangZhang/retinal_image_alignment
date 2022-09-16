@@ -58,7 +58,7 @@ The objective of the project is to develop deep-learning based multimodal retina
     {% if paper.image_bar %}
 <!-- ![]({{paper.image_bar}}) -->
 <p align="center">
-  <img src="{{site.url}}{{paper.image_bar}}" >
+  <img src="{{site.baseurl}}{{paper.image_bar}}" >
 </p>    
   {% endif %}
 
