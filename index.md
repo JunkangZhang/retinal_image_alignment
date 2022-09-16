@@ -2,16 +2,18 @@
 title: Multimodal Retina Image Alignment and Applications
 --- -->
 
-<table>
+<!-- <table>
    <tr>
      <td><a href=".#people">People</a></td>
      <td><a href=".#goals">Goals</a></td>
      <td><a href=".#results">Results</a></td>
    </tr>
  </table>
- <hr>
+ <hr> -->
 
-| [People](#people) | [Goals](#goals) | [Results](#results) |
+<span style="color:blue;font-weight:700;font-size:20px">
+  | [People](#people) | [Goals](#goals) | [Results](#results) |
+</span>
 
 # Team Members <a name="people"></a>
 ### Principal Investigators
