@@ -14,8 +14,7 @@ title: Multimodal Retina Image Alignment and Applications
 # Team members <a name="people"></a>
 ### Principal Investigators
 {% for pi in site.data.people.pi %}
-{% if pi.homepage %} [{{pi.name}}]({{pi.homepage}}) ({{pi.role}})  <br>
-{% else %} {{pi.name}} ({{pi.role}}) {% endif %} <br>
+{% if pi.homepage %} [{{pi.name}}]({{pi.homepage}}) ({{pi.role}}) {% else %} {{pi.name}} ({{pi.role}}) {% endif %} <br>
 {% endfor %}
 
 ### Research fellows
