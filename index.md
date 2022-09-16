@@ -12,9 +12,7 @@ title: Multimodal Retina Image Alignment and Applications
  <hr> -->
 
 <span style="color:blue;font-weight:700;font-size:25px">
-  - [People](#people) &ensp; &ensp;
-  - [Goals](#goals) &ensp; &ensp;
-  - [Results](#results)
+  [People](#people) &ensp; &ensp; [Goals](#goals) &ensp; &ensp; [Results](#results)
 </span>
 
 # Team Members <a name="people"></a>
