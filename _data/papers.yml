@@ -104,7 +104,7 @@ papers:
 
 
   -
-    cite: 2020
+    cite: 2020TVST_cavichini_aioverlay
     type: clinical
     topic: retinal_alignment
     title: Artificial Intelligence for Automated Overlay of Fundus Camera and Scanning Laser Ophthalmoscope Images
@@ -116,3 +116,33 @@ papers:
     # image_bar: /images/bar_TIP2022_selfsupervise.png
 
     abstract: The purpose of this study was to evaluate the ability to align two types of retinal images taken on different platforms; color fundus (CF) photographs and infrared scanning laser ophthalmoscope (IR SLO) images using mathematical warping and artificial intelligence (AI).    We collected 109 matched pairs of CF and IR SLO images. An AI algorithm utilizing two separate networks was developed. A style transfer network (STN) was used to segment vessel structures. A registration network was used to align the segmented images to each. Neither network used a ground truth dataset. A conventional image warping algorithm was used as a control. Software displayed image pairs as a 5 × 5 checkerboard grid composed of alternating subimages. This technique permitted vessel alignment determination by human observers and 5 masked graders evaluated alignment by the AI and conventional warping in 25 fields for each image.    Our new AI method was superior to conventional warping at generating vessel alignment as judged by masked human graders (P \\&lt; 0.0001). The average number of good/excellent matches increased from 90.5\\% to 94.4\\% with AI method.    AI permitted a more accurate overlay of CF and IR SLO images than conventional mathematical warping. This is a first step toward developing an AI that could allow overlay of all types of fundus images by utilizing vascular landmarks.    The ability to align and overlay imaging data from multiple instruments and manufacturers will permit better analysis of this complex data helping understand disease and predict treatment.
+
+
+
+  -
+    cite: 2022
+    type: clinical
+    topic: oct
+    title: Quantitative evaluation of morphological changes in anti-VEGF treated choroidal neovascularization due to age related macular degeneration using optical coherence tomography angiography
+    authors: Anna Heinke, William R. Freeman, Dirk-Uwe G. Bartsch, Lingyun Cheng, Carlo Miguel B. Galang, Alexandra Warter, Fritz Kalaw, Haochen Zhang, Truong Q. Nguyen, Cheolhong An
+    conference: ARVO Annual Meeting Abstract
+    year: 2022
+    doi: https://iovs.arvojournals.org/article.aspx?articleid=2779711
+
+    # image_bar: /images/bar_TIP2022_selfsupervise.png
+
+    abstract: The purpose of this study was to determine if clinical response to anti-VEGF intravitreal injection therapy correlated to quantitative changes of CNV area and vascularity in OCTA.    10 eyes of 10 patients (4 males, 6 females, mean age 75,1 y. o) with CNV were enrolled in the study. The inclusion criteria were presence of CNV confirmed with OCT, OCTA and FA in patients with initially active disease. A comprehensive ophthalmological exam was performed and OCTA was performed with Heidelberg Spectralis or Optovue using high resolution scans during the initial disease activity. The follow-up scan was performed after the successful response, i.e. at the presence of major reduction of sub- or intraretinal fluid or disappearance. CNV area was manually delineated and measured using Image J (area of selection in square milimeters). The CNV vascularity was measured using AngioTool by determining area of the vessels and was determined as a percentage of area occupied by vessels inside the explant area. Paired analysis was performed to compare the parameters at baseline and at the follow-up. The images were overlaid using the opencv(CV2) package in Python to look for morphological changes before and after the treatment.    Analysis of vascularity of the lesion showed a decrease from 34% to 23% (p=0.002). The pre-and post-treatment mean CNV area was 74.26 before versus 66.57 square milimeters after treatment (p=0.1621). The analysis of overlaid images showed that in most cases morphology of the vessels changes with narrowing of the vessels and fewer vessels after the injection.    We found that the CNV vessel percentage area correlates with clinical response to anti-VEGF, and it decreases significantly after the successful treatment. Treatment effect may thus be due to reduced lumen and permeability. The reduction in vascular percentage may be due to reduction in vascular lumen and number of vessels. OCTA thanks to its ability to image the dynamics of neovascular changes may be a useful additional method in determining the optimal intervals of anti-VEGF injection.  This abstract was presented at the 2022 ARVO Annual Meeting, held in Denver, CO, May 1-4, 2022, and virtually.
+
+  -
+    cite: 2022
+    type: clinical
+    topic: retinal_alignment
+    title: Comparison of Heidelberg Composite Images with Optos Ultra-Wide Field Images by Overlay using Artificial Intelligence vs Mathematical Warping
+    authors: Fritz Gerald Paguiligan Kalaw, Melina Cavichini, Junkang Zhang, Dirk-Uwe G. Bartsch, Varsha Alex, Carlo B. Galang, Anna Heinke, Alexandra Warter, Truong Q. Nguyen, Cheolhong An, William R. Freeman
+    conference: ARVO Annual Meeting Abstract
+    year: 2022
+    doi: https://iovs.arvojournals.org/article.aspx?articleid=2780599
+
+    # image_bar: /images/bar_TIP2022_selfsupervise.png
+
+    abstract: Wide angle imaging is an increasingly important area of retinal research as imaging the retinal periphery may aid in diagnosis of various retinopathies. This is currently being done easily with the Optos machine or, with little difficulty, using overlapping 55-degree scans across the fundus with the Heidelberg system. We aimed to determine if we could overlay images from these two imaging modalities to evaluate abnormalities seen on either machine. We evaluated and compared image alignment using mathematical warping of the images for comparison to Artificial Intelligence-assisted alignment as our group previously described with posterior pole imaging.    A total of 58 eyes were included in the study. Imaging was done on the same day. Single Optos image and 9 images of standard 55-degree fields were captured from multiple views using the Heidelberg machine.Optos image was designated as a reference (i.e. fixed image) during alignment and each of the 9 Heidelberg images were aligned onto the reference. We assumed that both images were captured over a standard 3D spherical eyeball and the Optos camera has a fixed view with regards to the globe, as specified in DICOM standard. Therefore, we set up 3D keypoint coordinates for the Optos image and then estimated a 3D-to-2D (or vice versa) Direct Linear Transformation (DLT) matrix to warp the Heidelberg image.Dice metric based on anatomical structures is adopted as the measurement to evaluate alignment quality. Retinal vessel maps were extracted from both images using third party segmentation algorithms. The Dice value was calculated over the vessel maps. Image masks indicating imaging circles are also applied to limit the computation in the overlapping areas between both images.    Twenty-four eyes are currently being studied with a total of 240 images (10 image per eye). Four out of the 24 resulting composite images contain exaggerated patterns due to distortions which cannot be solved by the DLT method and manual labels, which are therefore excluded from the alignment evaluation. The average Dice values for the remaining 20 image pairs is 0.4652.    Ultra-wide angle from different instruments can be co-localized and this may permit better evaluation of abnormalities seen on the two instruments. AI-enhancement of mathematical warping is ongoing and will be presented in the final paper.  This abstract was presented at the 2022 ARVO Annual Meeting, held in Denver, CO, May 1-4, 2022, and virtually.
