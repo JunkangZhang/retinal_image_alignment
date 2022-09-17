@@ -37,11 +37,10 @@ The objective of the project is to develop deep-learning based multimodal retina
 {% for paper_this_year in papers_by_year %}
 ### {{paper_this_year.name}}
 {% for paper in paper_this_year.items %}
-{% if paper.type=="engineering" %} <div><span style="background-color: #F00FFFF;"> Engineering </span></div> {% else %} <div><span style="background-color: #F00FF00;"> Clinical </span></div> {% endif %} &ensp;
-**{{paper.title}}** <br>
+{% if paper.type=="engineering" %} <div><span style="background-color: #F00FFFF;"> Engineering </span>  &ensp; <strong>{{paper.title}}</strong> </div> {% else %} <div><span style="background-color: #F00FF00;"> Clinical </span>  &ensp; <strong>{{paper.title}}</strong> </div> {% endif %}
 {{paper.authors}} <br>
 {% if paper.journal %} *{{paper.journal}}*, {{paper.year}}. {% elsif paper.conference %} *{{paper.conference}}*, {{paper.year}}. {% endif %} <br>
-{% if paper.doi %} **\[[Paper \(doi\)]({{paper.doi}})\]** &ensp; {% endif %}
+{% if paper.doi %} **\[[Paper \(link\)]({{paper.doi}})\]** &ensp; {% endif %}
 {% if paper.supplementary %} **\[[Supplementary]({{paper.supplementary}})\]** &ensp; {% endif %}
 {% if paper.code %} **\[[Code]({{paper.code}})\]** &ensp; {% endif %}
 {% if paper.abstract %}
@@ -62,4 +61,6 @@ The objective of the project is to develop deep-learning based multimodal retina
 
 <!--
 <mark> <span style="color:blue"> {{paper.type}} </span> </mark>
+{% if paper.type=="engineering" %} <div><span style="background-color: #F00FFFF;"> Engineering </span></div> {% else %} <div><span style="background-color: #F00FF00;"> Clinical </span></div> {% endif %} &ensp;
+**{{paper.title}}** <br>
 -->
