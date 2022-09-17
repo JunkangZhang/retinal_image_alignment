@@ -37,7 +37,7 @@ The objective of the project is to develop deep-learning based multimodal retina
 {% for paper_this_year in papers_by_year %}
 ### {{paper_this_year.name}}
 {% for paper in paper_this_year.items %}
-{% if paper.type=="engineering" %} <h2 style="background-color: #F00FFFF;"> Engineering </h2> {% elsif paper.type=="clinical" %} <h2 style="background-color: #F00FF00;"> Clinical </h2> {% endif %} &ensp;
+{% if paper.type=="engineering" %} <span style="background-color: #F00FFFF;"> Engineering </span> {% else %} <span style="background-color: #F00FF00;"> Clinical </span> {% endif %} &ensp;
 **{{paper.title}}** <br>
 {{paper.authors}} <br>
 {% if paper.journal %} *{{paper.journal}}*, {{paper.year}}. {% elsif paper.conference %} *{{paper.conference}}*, {{paper.year}}. {% endif %} <br>
