@@ -37,7 +37,7 @@ The objective of the project is to develop deep-learning based multimodal retina
 {% for paper_this_year in papers_by_year %}
 ### {{paper_this_year.name}}
 {% for paper in paper_this_year.items %}
-{{paper.type}}
+`{{paper.type}}` &ensp;
 **{{paper.title}}** <br>
 {{paper.authors}} <br>
 {% if paper.journal %} *{{paper.journal}}*, {{paper.year}}. {% elsif paper.conference %} *{{paper.conference}}*, {{paper.year}}. {% endif %} <br>
@@ -59,4 +59,3 @@ The objective of the project is to develop deep-learning based multimodal retina
 
 {% endfor %}
 {% endfor %}
-
