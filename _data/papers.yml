@@ -5,7 +5,6 @@ papers:
     title: Self-Supervised Rigid Registration for Multimodal Retinal Images
     authors: Cheolhong An, Yiqian Wang, Junkang Zhang, Truong Q Nguyen
     journal: IEEE Transactions on Image Processing
-    abstract: abstract placeholder
     year: 2022
     doi: https://doi.org/10.1109/TIP.2022.3201476
 
@@ -19,7 +18,6 @@ papers:
     title: Two-Step Registration on Multi-Modal Retinal Images via Deep Neural Networks
     authors: Junkang Zhang, Yiqian Wang, Ji Dai, Melina Cavichini, Dirk-Uwe G. Bartsch, William R. Freeman, Truong Q. Nguyen, Cheolhong An
     journal: IEEE Transactions on Image Processing
-    abstract: abstract placeholder
     year: 2022
     doi: https://doi.org/10.1109/TIP.2021.3135708
 
@@ -33,7 +31,6 @@ papers:
     title: Robust content-adaptive global registration for multimodal retinal images using weakly supervised deep-learning framework
     authors: Yiqian Wang, Junkang Zhang, Melina Cavichini, Dirk-Uwe G. Bartsch, William R. Freeman, Truong Q. Nguyen, Cheolhong An
     journal: IEEE Transactions on Image Processing
-    abstract: abstract placeholder
     year: 2021
     doi: https://doi.org/10.1109/TIP.2021.3058570
 
@@ -42,12 +39,25 @@ papers:
     abstract: Multimodal retinal imaging plays an important role in ophthalmology. We propose a content-adaptive multimodal retinal image registration method in this paper that focuses on the globally coarse alignment and includes three weakly supervised neural networks for vessel segmentation, feature detection and description, and outlier rejection. We apply the proposed framework to register color fundus images with infrared reflectance and fluorescein angiography images, and compare it with several conventional and deep learning methods. Our proposed framework demonstrates a significant improvement in robustness and accuracy reflected by a higher success rate and Dice coefficient compared with other methods.
 
   -
+    cite: 2020IEEEaccess_wang_metriccorrelation
+    topic: retinal_alignment
+    title: Study on Correlation Between Subjective and Objective Metrics for Multimodal Retinal Image Registration
+    authors: Yiqian Wang, Junkang Zhang, Melina Cavichini, Dirk-Uwe G. Bartsch, William R. Freeman, Truong Q. Nguyen, Cheolhong An
+    journal: IEEE Access
+    year: 2020
+    doi: https://doi.org/10.1109/ACCESS.2020.3032348
+
+    # image_bar: /images/bar_TIP2021_robust.png
+
+    abstract: Retinal imaging is crucial in diagnosing and treating retinal diseases, and multimodal retinal image registration constitutes a major advance in understanding retinal diseases. Despite the fact that many methods have been proposed for the registration task, the evaluation metrics for successful registration have not been thoroughly studied. In this article, we present a comprehensive overview of the existing evaluation metrics for multimodal retinal image registration, and compare the similarity between the subjective grade of ophthalmologists and various objective metrics. The Pearson's correlation coefficient and the corresponding confidence interval are used to evaluate metrics similarity. It is found that the binary and soft Dice coefficient on the segmented vessel can achieve the highest correlation with the subjective grades compared to other keypoint-supervised or unsupervised metrics. The paper established an objective metric that is highly correlated with the subjective evaluation of the ophthalmologists, which has never been studied before. The experimental results would build a connection between ophthalmology and image processing literature, and the findings may provide a good insight for researchers who investigate retinal image registration, retinal image segmentation and image domain transformation.
+
+
+  -
     cite: 2020ICASSP_wang_robust
     topic: retinal_alignment
     title: A segmentation based robust deep learning framework for multimodal retinal image registration
     authors: Yiqian Wang, Junkang Zhang, Cheolhong An, Melina Cavichini, Mahima Jhingan, Manuel J. Amador-Patarroyo, Christopher P. Long, Dirk-Uwe G. Bartsch, William R. Freeman, Truong Q. Nguyen
     conference: IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
-    abstract: abstract placeholder
     year: 2020
     doi: https://doi.org/10.1109/ICASSP40776.2020.9054077
 
@@ -61,7 +71,6 @@ papers:
     title: Perspective Distortion Correction for Multi-Modal Registration between Ultra-Widefield and Narrow-Angle Retinal Images
     authors: Junkang Zhang, Yiqian Wang, Dirk-Uwe G. Bartsch, William R. Freeman, Truong Q. Nguyen, Cheolhong An
     conference: Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC)
-    abstract: abstract placeholder
     year: 2021
     doi: https://doi.org/10.1109/EMBC46164.2021.9631084
 
@@ -75,7 +84,6 @@ papers:
     title: Joint vessel segmentation and deformable registration on multi-modal retinal images based on style transfer
     authors: Junkang Zhang, Cheolhong An, Ji Dai, Manuel Amador, Dirk-Uwe Bartsch, Shyamanga Borooah, William R. Freeman, Truong Q. Nguyen
     conference: IEEE International Conference on Image Processing (ICIP)
-    abstract: abstract placeholder
     year: 2019
     doi: https://doi.org/10.1109/ICIP.2019.8802932
 
