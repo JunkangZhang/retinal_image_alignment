@@ -38,9 +38,10 @@ The objective of the project is to develop deep-learning based multimodal retina
 ### {{paper_this_year.name}}
 {% for paper in paper_this_year.items %}
 <div>
-{% if paper.type=="engineering" %} <span style="background-color:LightCyan;font-size:12pt;font-family:'Courier'"> Engineering</span> {% else %} <span style="background-color:MistyRose;font-size:10pt;font-family:'Courier'"> Clinical</span> {% endif %} &ensp;
-<strong>{{paper.title}}</strong>
+{% if paper.type=="engineering" %} <span style="background-color:LightCyan;font-size:12pt;font-family:'Courier'"> <strong>Engineering</strong></span> {% else %} <span style="background-color:LightPink;font-size:10pt;font-family:'Courier'"> <strong>Clinical</strong></span> {% endif %} &ensp;
+{% if paper.journal %} <span style="background-color:LightGreen;font-size:12pt;font-family:'Courier'"> <strong>Journal</strong></span> {% else %} <span style="background-color:Khaki;font-size:10pt;font-family:'Courier'"> <strong>Conference</strong></span> {% endif %} &ensp;
 </div>
+**{{paper.title}}** <br>
 {{paper.authors}} <br>
 {% if paper.journal %} *{{paper.journal}}*, {{paper.year}}. {% elsif paper.conference %} *{{paper.conference}}*, {{paper.year}}. {% endif %} <br>
 {% if paper.doi %} **\[[Paper \(link\)]({{paper.doi}})\]** &ensp; {% endif %}
@@ -67,4 +68,5 @@ The objective of the project is to develop deep-learning based multimodal retina
 {% if paper.type=="engineering" %} <div><span style="background-color: #F00FFFF;"> Engineering </span></div> {% else %} <div><span style="background-color: #F00FF00;"> Clinical </span></div> {% endif %} &ensp;
 **{{paper.title}}** <br>
 {% if paper.type=="engineering" %} <div><span style="background-color:LightCyan;font-size:12pt;font-family:'Courier'"> Engineering</span>  &ensp; <strong>{{paper.title}}</strong> </div> {% else %} <div><span style="background-color:MistyRose;font-size:10pt;font-family:'Courier'"> Clinical</span>  &ensp; <strong>{{paper.title}}</strong> </div> {% endif %}
+<strong>{{paper.title}}</strong>
 -->
