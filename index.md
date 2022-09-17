@@ -59,4 +59,3 @@ The objective of the project is to develop deep-learning based multimodal retina
 {% endfor %}
 {% endfor %}
 
-<!-- {% if paper.type=="engineering" %} `Engineering` {% paper.type=="clinical" %} `Clinical` {% endif %} &ensp; -->
