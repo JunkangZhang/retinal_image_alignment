@@ -1,9 +1,10 @@
 papers:
   -
     cite: 2022TIP_an_selfsupervise
+    type: engineering
     topic: retinal_alignment
     title: Self-Supervised Rigid Registration for Multimodal Retinal Images
-    authors: Cheolhong An, Yiqian Wang, Junkang Zhang, Truong Q Nguyen
+    authors: Cheolhong An, Yiqian Wang, Junkang Zhang, Truong Q. Nguyen
     journal: IEEE Transactions on Image Processing
     year: 2022
     doi: https://doi.org/10.1109/TIP.2022.3201476
@@ -14,6 +15,7 @@ papers:
 
   -
     cite: 2022TIP_zhang_twostep
+    type: engineering
     topic: retinal_alignment
     title: Two-Step Registration on Multi-Modal Retinal Images via Deep Neural Networks
     authors: Junkang Zhang, Yiqian Wang, Ji Dai, Melina Cavichini, Dirk-Uwe G. Bartsch, William R. Freeman, Truong Q. Nguyen, Cheolhong An
@@ -27,6 +29,7 @@ papers:
 
   -
     cite: 2021TIP_wang_robust
+    type: engineering
     topic: retinal_alignment
     title: Robust content-adaptive global registration for multimodal retinal images using weakly supervised deep-learning framework
     authors: Yiqian Wang, Junkang Zhang, Melina Cavichini, Dirk-Uwe G. Bartsch, William R. Freeman, Truong Q. Nguyen, Cheolhong An
@@ -40,6 +43,7 @@ papers:
 
   -
     cite: 2020IEEEaccess_wang_metriccorrelation
+    type: engineering
     topic: retinal_alignment
     title: Study on Correlation Between Subjective and Objective Metrics for Multimodal Retinal Image Registration
     authors: Yiqian Wang, Junkang Zhang, Melina Cavichini, Dirk-Uwe G. Bartsch, William R. Freeman, Truong Q. Nguyen, Cheolhong An
@@ -54,6 +58,7 @@ papers:
 
   -
     cite: 2020ICASSP_wang_robust
+    type: engineering
     topic: retinal_alignment
     title: A segmentation based robust deep learning framework for multimodal retinal image registration
     authors: Yiqian Wang, Junkang Zhang, Cheolhong An, Melina Cavichini, Mahima Jhingan, Manuel J. Amador-Patarroyo, Christopher P. Long, Dirk-Uwe G. Bartsch, William R. Freeman, Truong Q. Nguyen
@@ -67,6 +72,7 @@ papers:
 
   -
     cite: 2021EMBC_zhang_distortion
+    type: engineering
     topic: retinal_alignment
     title: Perspective Distortion Correction for Multi-Modal Registration between Ultra-Widefield and Narrow-Angle Retinal Images
     authors: Junkang Zhang, Yiqian Wang, Dirk-Uwe G. Bartsch, William R. Freeman, Truong Q. Nguyen, Cheolhong An
@@ -80,6 +86,7 @@ papers:
 
   -
     cite: 2019ICIP_zhang_style
+    type: engineering
     topic: retinal_alignment
     title: Joint vessel segmentation and deformable registration on multi-modal retinal images based on style transfer
     authors: Junkang Zhang, Cheolhong An, Ji Dai, Manuel Amador, Dirk-Uwe Bartsch, Shyamanga Borooah, William R. Freeman, Truong Q. Nguyen
@@ -93,3 +100,19 @@ papers:
     supplementary: https://github.com/JunkangZhang/RetinalSegReg/blob/master/ICIP2019_supplementary.pdf
 
     abstract: In multi-modal retinal image registration task, there are two major challenges, i.e., poor performance in finding correspondence due to inconsistent features, and lack of labeled data for training learning-based models. In this paper, we propose a joint vessel segmentation and deformable registration model based on CNN for this task, built under the framework of weakly supervised style transfer learning and perceptual loss. In vessel segmentation, a style loss guides the model to generate segmentation maps that look authentic, and helps transform images of different modalities into consistent representations. In deformable registration, a content loss helps find dense correspondence for multi-modal images based on their consistent representations, and improves the segmentation results simultaneously. Experiment results show that our model has better performance than other deformable registration methods in both quantitative and visual evaluations, and the segmentation results also help the rigid transformation.
+
+
+
+  -
+    cite: 2020
+    type: clinical
+    topic: retinal_alignment
+    title: Artificial Intelligence for Automated Overlay of Fundus Camera and Scanning Laser Ophthalmoscope Images
+    authors: Melina Cavichini, Cheolhong An, Dirk-Uwe G. Bartsch, Mahima Jhingan, Manuel J. Amador-Patarroyo, Christopher P. Long, Junkang Zhang, Yiqian Wang, Alison X. Chan, Samantha Madala, Truong Nguyen, William R. Freeman
+    journal: Translational Vision Science & Technology
+    year: 2020
+    doi: https://doi.org/10.1167/tvst.9.2.56
+
+    # image_bar: /images/bar_TIP2022_selfsupervise.png
+
+    abstract: The purpose of this study was to evaluate the ability to align two types of retinal images taken on different platforms; color fundus (CF) photographs and infrared scanning laser ophthalmoscope (IR SLO) images using mathematical warping and artificial intelligence (AI).    We collected 109 matched pairs of CF and IR SLO images. An AI algorithm utilizing two separate networks was developed. A style transfer network (STN) was used to segment vessel structures. A registration network was used to align the segmented images to each. Neither network used a ground truth dataset. A conventional image warping algorithm was used as a control. Software displayed image pairs as a 5 × 5 checkerboard grid composed of alternating subimages. This technique permitted vessel alignment determination by human observers and 5 masked graders evaluated alignment by the AI and conventional warping in 25 fields for each image.    Our new AI method was superior to conventional warping at generating vessel alignment as judged by masked human graders (P \\&lt; 0.0001). The average number of good/excellent matches increased from 90.5\\% to 94.4\\% with AI method.    AI permitted a more accurate overlay of CF and IR SLO images than conventional mathematical warping. This is a first step toward developing an AI that could allow overlay of all types of fundus images by utilizing vascular landmarks.    The ability to align and overlay imaging data from multiple instruments and manufacturers will permit better analysis of this complex data helping understand disease and predict treatment.
