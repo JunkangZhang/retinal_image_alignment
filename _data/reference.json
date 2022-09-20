@@ -1,0 +1,51 @@
+{
+  "2022TIP_An_selfsupervise":
+  {
+    "type": "engineering",
+    "topic": "retinal_alignment",
+    "image_bar": "/images/bar_TIP2022_selfsupervise.png"
+  },
+  "2022TIP_Zhang_twostep":
+  {
+    "type": "engineering",
+    "topic": "retinal_alignment",
+    "image_bar": "/images/bar_TIP2022_twostep.png"
+  },
+  "2021TIP_Wang_robust":
+  {
+    "type": "engineering",
+    "topic": "retinal_alignment",
+    "image_bar": "/images/bar_TIP2021_robust.png"
+  },
+  "2020Access_Wang_correlation":
+  {
+    "type": "engineering",
+    "topic": "retinal_alignment"
+  },
+  "2020ICASSP_Wang_robust":
+  {
+    "type": "engineering",
+    "topic": "retinal_alignment",
+    "image_bar": "/images/bar_ICASSP2020_robust.png"
+  },
+  "2021EMBC_Zhang_distortion":
+  {
+    "type": "engineering",
+    "topic": "retinal_alignment",
+    "image_bar": "/images/bar_EMBC2021_dc.png"
+  },
+  "2019ICIP_Zhang_style":
+  {
+    "type": "engineering",
+    "topic": "retinal_alignment",
+    "image_bar": "/images/bar_ICIP2019_style.png",
+    "code": "https://github.com/JunkangZhang/RetinalSegReg"
+    "supplementary": "https://github.com/JunkangZhang/RetinalSegReg/blob/master/ICIP2019_supplementary.pdf"
+  },
+
+  "2020TVST_Cavichini_overlay":
+  {
+    "type": "clinical",
+    "topic": "retinal_alignment",
+  }
+}
