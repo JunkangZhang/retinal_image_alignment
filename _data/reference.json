@@ -46,6 +46,6 @@
   "2020TVST_Cavichini_overlay":
   {
     "type": "clinical",
-    "topic": "retinal_alignment",
+    "topic": "retinal_alignment"
   }
 }
