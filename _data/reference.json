@@ -39,7 +39,7 @@
     "type": "engineering",
     "topic": "retinal_alignment",
     "image_bar": "/images/bar_ICIP2019_style.png",
-    "code": "https://github.com/JunkangZhang/RetinalSegReg"
+    "code": "https://github.com/JunkangZhang/RetinalSegReg",
     "supplementary": "https://github.com/JunkangZhang/RetinalSegReg/blob/master/ICIP2019_supplementary.pdf"
   },
 
