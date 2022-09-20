@@ -14,6 +14,6 @@ if __name__=='__main__':
     people_yaml = yaml.load(open('_data/people.yml'))
     print(' ')
 
-    fp_w = open('test.html', 'w')
+    fp_w = open('test.md', 'w')
     write_frontmatter(fp_w)
     fp_w.write('<h2 id="test-page">Test page</h2>\n')
