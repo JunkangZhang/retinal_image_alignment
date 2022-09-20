@@ -1,5 +1,0 @@
----
-permalink: /test/
----
-
-## Test page
