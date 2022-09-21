@@ -63,7 +63,7 @@ def process_bibtex_authors(authors):
     :return:
     '''
     if 'and' in authors:
-        authors_list = authors.split('and')
+        authors_list = authors.split(' and ')
         for idx, author in enumerate(authors_list):
             author = author.strip()
             if ',' in author:
