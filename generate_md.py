@@ -5,7 +5,7 @@ import textwrap
 from collections import OrderedDict
 
 def write_frontmatter(fp):
-    text = '''---\npermalink: /test/\n---\n'''
+    text = '''---\npermalink: /test/\n---\n\n'''
     fp.write(text)
 
 def write_navigation(fp):
@@ -13,7 +13,7 @@ def write_navigation(fp):
            '[People](#people) &ensp; &ensp; ' \
            '[Goals](#goals) &ensp; &ensp; ' \
            '[Results](#results)' \
-           '\n</span>\n'
+           '\n</span>\n\n'
     fp.write(text)
 
 def write_people(fp, ppl):
@@ -34,6 +34,7 @@ def write_people(fp, ppl):
         text += '[%s](%s) '%(st['name'], st['homepage']) if 'homepage' in st.keys() else '%s '%st['name']
         text += '&ensp; | &ensp; ' if (cnt+1)<len(ppl['student']) else '\n'
 
+    text += '\n'
     fp.write(text)
 
 def write_goal(fp):
@@ -45,8 +46,24 @@ def write_goal(fp):
            'diagnosis of cardiovascular diseases, ' \
            '(3).  Develop segmentation algorithm for OCT volumes with the help of motion correction, and ' \
            '(4).  Evaluate and assess the ability of goals 2 and 3 in diagnosis evaluation using human experts ' \
-           '(clinical specialist). \n'
+           '(clinical specialist). \n\n'
     fp.write(text)
+
+def process_bibtex_authors(authors):
+    '''
+    change from 'lastname1, firstname1 and lastname2, firstname2' to 'firstname1 lastname1, firstname2 lastname2'
+    :param authors: author string from bibtex
+    :return:
+    '''
+    if 'and' in authors:
+        authors_list = authors.split('and')
+        for idx, author in enumerate(authors_list):
+            author = author.strip()
+            if ',' in author:
+                last, first = author.rsplit(',', 1)
+                authors_list[idx] = first.strip() + ' ' + last.strip()
+        authors = ', '.join(authors_list)
+    return authors
 
 def process_publications(fp_w, bib, orders):
     # order_c = orders[0]
@@ -60,9 +77,13 @@ def process_publications(fp_w, bib, orders):
             allvalues = sorted(allvalues)[::-1]
         vo = allvalues
     bibnew = OrderedDict({_k:OrderedDict() for _k in vo})
-    for kb in bib.keys():
+    for k_entry in bib.keys():
         # if bib[kb][ko] not in values
-        bibnew[bib[kb][ko]][kb]= bib[kb]
+        bibnew[bib[k_entry][ko]][k_entry]= bib[k_entry]
+        if output.startswith('tag'):
+            if 'tags' not in bibnew[bib[k_entry][ko]][k_entry].keys():
+                bibnew[bib[k_entry][ko]][k_entry]['tags'] = []
+            bibnew[bib[k_entry][ko]][k_entry]['tags'] += [bib[k_entry][ko]]
     for kn in bibnew.keys():
         if output=='title':
             text = '### %s\n'%kn
@@ -72,9 +93,16 @@ def process_publications(fp_w, bib, orders):
             process_publications(fp_w, bibnew[kn], orders[1:])
         else:
             for kb in bibnew[kn].keys():
+                text = ''
                 bib_c = bibnew[kn][kb]
-                text = '**%s** <br>\n' % bib_c['title'].replace('{','').replace('}','')
-                text += '%s <br>\n' % bib_c['author']
+                if 'tags' in bib_c.keys():
+                    text += '<div>\n'
+                    for tag in bib_c['tags']:
+                        text += '<span style="background-color:LightCyan;font-size:12pt;font-family:\'Courier\'"> <strong>%s</strong></span>\n' % tag
+                    text += '</div>\n'
+                text += '**%s** <br>\n' % bib_c['title'].replace('{','').replace('}','')
+                authors = process_bibtex_authors(bib_c['author'])
+                text += '%s <br>\n' % authors
                 text += '*%s*, ' % bib_c['journal'] if 'journal' in bib_c.keys() else '*%s*, ' % bib_c['booktitle']
                 text += '%s <br>\n' % bib_c['year']
                 text += '**\[[Paper \(link\)](%s)\]**' % ('https://doi.org/'+bib_c['doi']) if 'doi' in bib_c.keys() else ''
@@ -90,6 +118,7 @@ def process_publications(fp_w, bib, orders):
                 text += '<p align="center"> ' \
                         '<img src="{{site.baseurl}}%s" > ' \
                         '</p>\n' % bib_c['image_bar'] if 'image_bar' in bib_c.keys() else ''
+                text += '\n'
                 fp_w.write(text)
                 print(text)
 
