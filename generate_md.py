@@ -4,6 +4,13 @@ import yaml
 import textwrap
 from collections import OrderedDict
 
+tags_mapping = {
+    'article':{'show':'Journal', 'color':'LightGreen'},
+    'inproceedings': {'show': 'Conference', 'color': 'Khaki'},
+    'engineering': {'show': 'Engineering', 'color': 'LightCyan'},
+    'clinical': {'show': 'Clinical', 'color': 'LightPink'},
+}
+
 def write_frontmatter(fp):
     text = '''---\npermalink: /test/\n---\n\n'''
     fp.write(text)
@@ -98,7 +105,19 @@ def process_publications(fp_w, bib, orders):
                 if 'tags' in bib_c.keys():
                     text += '<div>\n'
                     for tag in bib_c['tags']:
-                        text += '<span style="background-color:LightCyan;font-size:12pt;font-family:\'Courier\'"> <strong>%s</strong></span>\n' % tag
+                        text += '<span style="' \
+                                'display: inline-block; ' \
+                                'padding-top: 2px; ' \
+                                'padding-right: 10px; ' \
+                                'padding-bottom: 2px; ' \
+                                'padding-left: 10px;' \
+                                'border-radius: 20px' \
+                                'background-color:%s;' \
+                                'font-size:14px;' \
+                                '<strong>%s</strong>' \
+                                '</span>\n' % \
+                                (tags_mapping[tag]['show'], tags_mapping[tag]['color'])
+                        # 'font-family:\'Courier\'"> ' \
                     text += '</div>\n'
                 text += '**%s** <br>\n' % bib_c['title'].replace('{','').replace('}','')
                 authors = process_bibtex_authors(bib_c['author'])

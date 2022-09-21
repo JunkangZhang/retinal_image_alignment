@@ -20,8 +20,8 @@ The objective of the project is to develop deep-learning based multimodal retina
 # Results (Publications) <a name="results"></a>
 ### 2022
 <div>
-<span style="background-color:LightCyan;font-size:12pt;font-family:'Courier'"> <strong>article</strong></span>
-<span style="background-color:LightCyan;font-size:12pt;font-family:'Courier'"> <strong>engineering</strong></span>
+<span style="display: inline-block; padding-top: 2px; padding-right: 10px; padding-bottom: 2px; padding-left: 10px;border-radius: 20pxbackground-color:Journal;font-size:14px;<strong>LightGreen</strong></span>
+<span style="display: inline-block; padding-top: 2px; padding-right: 10px; padding-bottom: 2px; padding-left: 10px;border-radius: 20pxbackground-color:Engineering;font-size:14px;<strong>LightCyan</strong></span>
 </div>
 **Self-Supervised Rigid Registration for Multimodal Retinal Images** <br>
 Cheolhong An, Yiqian Wang, Junkang Zhang, Truong Q. Nguyen <br>
@@ -31,8 +31,8 @@ Cheolhong An, Yiqian Wang, Junkang Zhang, Truong Q. Nguyen <br>
 <p align="center"> <img src="{{site.baseurl}}/images/bar_TIP2022_selfsupervise.png" > </p>
 
 <div>
-<span style="background-color:LightCyan;font-size:12pt;font-family:'Courier'"> <strong>article</strong></span>
-<span style="background-color:LightCyan;font-size:12pt;font-family:'Courier'"> <strong>engineering</strong></span>
+<span style="display: inline-block; padding-top: 2px; padding-right: 10px; padding-bottom: 2px; padding-left: 10px;border-radius: 20pxbackground-color:Journal;font-size:14px;<strong>LightGreen</strong></span>
+<span style="display: inline-block; padding-top: 2px; padding-right: 10px; padding-bottom: 2px; padding-left: 10px;border-radius: 20pxbackground-color:Engineering;font-size:14px;<strong>LightCyan</strong></span>
 </div>
 **Two-Step Registration on Multi-Modal Retinal Images via Deep Neural Networks** <br>
 Junkang Zhang, Yiqian Wang, Ji Dai, Melina Cavichini, Dirk-Uwe G. Bartsch, William R. Freeman, Truong Q. Nguyen, Cheolhong An <br>
@@ -43,8 +43,8 @@ Junkang Zhang, Yiqian Wang, Ji Dai, Melina Cavichini, Dirk-Uwe G. Bartsch, Willi
 
 ### 2021
 <div>
-<span style="background-color:LightCyan;font-size:12pt;font-family:'Courier'"> <strong>article</strong></span>
-<span style="background-color:LightCyan;font-size:12pt;font-family:'Courier'"> <strong>engineering</strong></span>
+<span style="display: inline-block; padding-top: 2px; padding-right: 10px; padding-bottom: 2px; padding-left: 10px;border-radius: 20pxbackground-color:Journal;font-size:14px;<strong>LightGreen</strong></span>
+<span style="display: inline-block; padding-top: 2px; padding-right: 10px; padding-bottom: 2px; padding-left: 10px;border-radius: 20pxbackground-color:Engineering;font-size:14px;<strong>LightCyan</strong></span>
 </div>
 **Robust Content-Adaptive Global Registration for Multimodal Retinal Images Using Weakly Supervised Deep-Learning Framework** <br>
 Yiqian Wang, Junkang Zhang, Melina Cavichini, Dirk-Uwe G. Bartsch, William R. Freeman, Truong Q. Nguyen, Cheolhong An <br>
@@ -54,8 +54,8 @@ Yiqian Wang, Junkang Zhang, Melina Cavichini, Dirk-Uwe G. Bartsch, William R. Fr
 <p align="center"> <img src="{{site.baseurl}}/images/bar_TIP2021_robust.png" > </p>
 
 <div>
-<span style="background-color:LightCyan;font-size:12pt;font-family:'Courier'"> <strong>inproceedings</strong></span>
-<span style="background-color:LightCyan;font-size:12pt;font-family:'Courier'"> <strong>engineering</strong></span>
+<span style="display: inline-block; padding-top: 2px; padding-right: 10px; padding-bottom: 2px; padding-left: 10px;border-radius: 20pxbackground-color:Conference;font-size:14px;<strong>Khaki</strong></span>
+<span style="display: inline-block; padding-top: 2px; padding-right: 10px; padding-bottom: 2px; padding-left: 10px;border-radius: 20pxbackground-color:Engineering;font-size:14px;<strong>LightCyan</strong></span>
 </div>
 **Perspective Distortion Correction for Multi-Modal Registration between Ultra-Widefield and Narrow-Angle Retinal Images** <br>
 Junkang Zhang, Yiqian Wang, Dirk-Uwe G. Bartsch, William R. Freeman, Truong Q. Nguyen, Cheolhong An <br>
@@ -66,8 +66,8 @@ Junkang Zhang, Yiqian Wang, Dirk-Uwe G. Bartsch, William R. Freeman, Truong Q. N
 
 ### 2020
 <div>
-<span style="background-color:LightCyan;font-size:12pt;font-family:'Courier'"> <strong>article</strong></span>
-<span style="background-color:LightCyan;font-size:12pt;font-family:'Courier'"> <strong>engineering</strong></span>
+<span style="display: inline-block; padding-top: 2px; padding-right: 10px; padding-bottom: 2px; padding-left: 10px;border-radius: 20pxbackground-color:Journal;font-size:14px;<strong>LightGreen</strong></span>
+<span style="display: inline-block; padding-top: 2px; padding-right: 10px; padding-bottom: 2px; padding-left: 10px;border-radius: 20pxbackground-color:Engineering;font-size:14px;<strong>LightCyan</strong></span>
 </div>
 **Study on Correlation Between Subjective and Objective Metrics for Multimodal Retinal Image Registration** <br>
 Yiqian Wang, Junkang Zhang, Melina Cavichini, Dirk-Uwe G. Bartsch, William R. Freeman, Truong Q. Nguyen, Cheolhong An <br>
@@ -76,8 +76,8 @@ Yiqian Wang, Junkang Zhang, Melina Cavichini, Dirk-Uwe G. Bartsch, William R. Fr
 <details> <summary>Abstract</summary> Retinal imaging is crucial in diagnosing and treating retinal diseases, and multimodal retinal image registration constitutes a major advance in understanding retinal diseases. Despite the fact that many methods have been proposed for the registration task, the evaluation metrics for successful registration have not been thoroughly studied. In this article, we present a comprehensive overview of the existing evaluation metrics for multimodal retinal image registration, and compare the similarity between the subjective grade of ophthalmologists and various objective metrics. The Pearson's correlation coefficient and the corresponding confidence interval are used to evaluate metrics similarity. It is found that the binary and soft Dice coefficient on the segmented vessel can achieve the highest correlation with the subjective grades compared to other keypoint-supervised or unsupervised metrics. The paper established an objective metric that is highly correlated with the subjective evaluation of the ophthalmologists, which has never been studied before. The experimental results would build a connection between ophthalmology and image processing literature, and the findings may provide a good insight for researchers who investigate retinal image registration, retinal image segmentation and image domain transformation. </details>
 
 <div>
-<span style="background-color:LightCyan;font-size:12pt;font-family:'Courier'"> <strong>article</strong></span>
-<span style="background-color:LightCyan;font-size:12pt;font-family:'Courier'"> <strong>clinical</strong></span>
+<span style="display: inline-block; padding-top: 2px; padding-right: 10px; padding-bottom: 2px; padding-left: 10px;border-radius: 20pxbackground-color:Journal;font-size:14px;<strong>LightGreen</strong></span>
+<span style="display: inline-block; padding-top: 2px; padding-right: 10px; padding-bottom: 2px; padding-left: 10px;border-radius: 20pxbackground-color:Clinical;font-size:14px;<strong>LightPink</strong></span>
 </div>
 **Artificial Intelligence for Automated Overlay of Fundus Camera and Scanning Laser Ophthalmoscope Images** <br>
 Melina Cavichini, Cheolhong An, Dirk-Uwe G. Bartsch, Mahima Jhingan, Manuel J. Amador-Patarroyo, Christopher P. Long, Junkang Zhang, Yiqian Wang, Alison X. Chan, Samantha Madala, Truong Nguyen, William R. Freeman <br>
@@ -86,8 +86,8 @@ Melina Cavichini, Cheolhong An, Dirk-Uwe G. Bartsch, Mahima Jhingan, Manuel J. A
 <details> <summary>Abstract</summary> {   The purpose of this study was to evaluate the ability to align two types of retinal images taken on different platforms; color fundus (CF) photographs and infrared scanning laser ophthalmoscope (IR SLO) images using mathematical warping and artificial intelligence (AI).    We collected 109 matched pairs of CF and IR SLO images. An AI algorithm utilizing two separate networks was developed. A style transfer network (STN) was used to segment vessel structures. A registration network was used to align the segmented images to each. Neither network used a ground truth dataset. A conventional image warping algorithm was used as a control. Software displayed image pairs as a 5 × 5 checkerboard grid composed of alternating subimages. This technique permitted vessel alignment determination by human observers and 5 masked graders evaluated alignment by the AI and conventional warping in 25 fields for each image.    Our new AI method was superior to conventional warping at generating vessel alignment as judged by masked human graders (P \\&lt; 0.0001). The average number of good/excellent matches increased from 90.5\\% to 94.4\\% with AI method.    AI permitted a more accurate overlay of CF and IR SLO images than conventional mathematical warping. This is a first step toward developing an AI that could allow overlay of all types of fundus images by utilizing vascular landmarks.    The ability to align and overlay imaging data from multiple instruments and manufacturers will permit better analysis of this complex data helping understand disease and predict treatment.  } </details>
 
 <div>
-<span style="background-color:LightCyan;font-size:12pt;font-family:'Courier'"> <strong>inproceedings</strong></span>
-<span style="background-color:LightCyan;font-size:12pt;font-family:'Courier'"> <strong>engineering</strong></span>
+<span style="display: inline-block; padding-top: 2px; padding-right: 10px; padding-bottom: 2px; padding-left: 10px;border-radius: 20pxbackground-color:Conference;font-size:14px;<strong>Khaki</strong></span>
+<span style="display: inline-block; padding-top: 2px; padding-right: 10px; padding-bottom: 2px; padding-left: 10px;border-radius: 20pxbackground-color:Engineering;font-size:14px;<strong>LightCyan</strong></span>
 </div>
 **A Segmentation Based Robust Deep Learning Framework for Multimodal Retinal Image Registration** <br>
 Yiqian Wang, Junkang Zhang, Cheolhong An, Melina Cavichini, Mahima Jhingan, Manuel J. Amador-Patarroyo, Christopher P. Long, Dirk-Uwe G. Bartsch, William R. Freeman, Truong Q. Nguyen <br>
@@ -98,8 +98,8 @@ Yiqian Wang, Junkang Zhang, Cheolhong An, Melina Cavichini, Mahima Jhingan, Manu
 
 ### 2019
 <div>
-<span style="background-color:LightCyan;font-size:12pt;font-family:'Courier'"> <strong>inproceedings</strong></span>
-<span style="background-color:LightCyan;font-size:12pt;font-family:'Courier'"> <strong>engineering</strong></span>
+<span style="display: inline-block; padding-top: 2px; padding-right: 10px; padding-bottom: 2px; padding-left: 10px;border-radius: 20pxbackground-color:Conference;font-size:14px;<strong>Khaki</strong></span>
+<span style="display: inline-block; padding-top: 2px; padding-right: 10px; padding-bottom: 2px; padding-left: 10px;border-radius: 20pxbackground-color:Engineering;font-size:14px;<strong>LightCyan</strong></span>
 </div>
 **Joint Vessel Segmentation and Deformable Registration on Multi-Modal Retinal Images Based on Style Transfer** <br>
 Junkang Zhang, Cheolhong An, Ji Dai, Manuel Amador, Dirk-Uwe Bartsch, Shyamanga Borooah, William R. Freeman, Truong Q. Nguyen <br>
