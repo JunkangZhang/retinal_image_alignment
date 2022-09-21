@@ -116,7 +116,7 @@ def process_publications(fp_w, bib, orders):
                                 'font-size:14px;' \
                                 '<strong>%s</strong>' \
                                 '</span>\n' % \
-                                (tags_mapping[tag]['show'], tags_mapping[tag]['color'])
+                                (tags_mapping[tag]['color'], tags_mapping[tag]['show'])
                         # 'font-family:\'Courier\'"> ' \
                     text += '</div>\n'
                 text += '**%s** <br>\n' % bib_c['title'].replace('{','').replace('}','')
