@@ -114,6 +114,7 @@ def process_publications(fp_w, bib, orders):
                                 'border-radius: 20px' \
                                 'background-color:%s;' \
                                 'font-size:14px;' \
+                                '">' \
                                 '<strong>%s</strong>' \
                                 '</span>\n' % \
                                 (tags_mapping[tag]['color'], tags_mapping[tag]['show'])
