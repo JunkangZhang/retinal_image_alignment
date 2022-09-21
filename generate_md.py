@@ -5,10 +5,10 @@ import textwrap
 from collections import OrderedDict
 
 tags_mapping = {
-    'article':{'show':'Journal', 'color':'LightGreen'},
-    'inproceedings': {'show': 'Conference', 'color': 'Khaki'},
-    'engineering': {'show': 'Engineering', 'color': 'LightCyan'},
-    'clinical': {'show': 'Clinical', 'color': 'LightPink'},
+    'article':{'show':'Journal', 'backcolor':'#dafbe1', 'fontcolor':'#2da44e'},
+    'inproceedings': {'show': 'Conference', 'backcolor': '#fff8c5', 'fontcolor':'#bf8700'},
+    'engineering': {'show': 'Engineering', 'backcolor': '#ddf4ff', 'fontcolor':'#218bff'},
+    'clinical': {'show': 'Clinical', 'backcolor': '#ffeff7', 'fontcolor':'#e85aad'},
 }
 
 def write_frontmatter(fp):
@@ -110,14 +110,15 @@ def process_publications(fp_w, bib, orders):
                                 'padding-top: 2px; ' \
                                 'padding-right: 10px; ' \
                                 'padding-bottom: 2px; ' \
-                                'padding-left: 10px;' \
-                                'border-radius: 20px' \
-                                'background-color:%s;' \
-                                'font-size:14px;' \
+                                'padding-left: 10px; ' \
+                                'border-radius: 20px; ' \
+                                'background-color: %s; ' \
+                                'color: %s; ' \
+                                'font-size: 14px; ' \
                                 '">' \
                                 '<strong>%s</strong>' \
                                 '</span>\n' % \
-                                (tags_mapping[tag]['color'], tags_mapping[tag]['show'])
+                                (tags_mapping[tag]['backcolor'], tags_mapping[tag]['fontcolor'], tags_mapping[tag]['show'])
                         # 'font-family:\'Courier\'"> ' \
                     text += '</div>\n'
                 text += '**%s** <br>\n' % bib_c['title'].replace('{','').replace('}','')
@@ -138,7 +139,7 @@ def process_publications(fp_w, bib, orders):
                 text += '<p align="center"> ' \
                         '<img src="{{site.baseurl}}%s" > ' \
                         '</p>\n' % bib_c['image_bar'] if 'image_bar' in bib_c.keys() else ''
-                text += '\n'
+                text += '<br>\n'
                 fp_w.write(text)
                 print(text)
 
