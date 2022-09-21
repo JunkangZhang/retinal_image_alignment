@@ -161,7 +161,7 @@ if __name__=='__main__':
     fp_w.write('# Results (Publications) <a name="results"></a>\n')
     # fp_w.write('<h2 id="test-page">Test page</h2>\n')
 
-    # 'order': None (just group), 'ascend', 'descend', [list]
+    # 'order': None (just group), 'ascend', 'descend', [list] (sort according to the list)
     orders = [{'key': 'year', 'order': 'descend', 'output': 'title'},
               {'key': 'ENTRYTYPE', 'order': ['article', 'inproceedings'], 'output': 'tag'},
               {'key': 'type', 'order': ['engineering', 'clinical'], 'output': 'tag'}]
