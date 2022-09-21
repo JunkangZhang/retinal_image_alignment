@@ -34,7 +34,7 @@ def write_people(fp, ppl):
         text += '[%s](%s) '%(st['name'], st['homepage']) if 'homepage' in st.keys() else '%s '%st['name']
         text += '&ensp; | &ensp; ' if (cnt+1)<len(ppl['student']) else '\n'
 
-    fp_w.write(text)
+    fp.write(text)
 
 def write_goal(fp):
     text = '# Major Goals <a name="goals"></a>\n' \
@@ -73,14 +73,14 @@ def process_publications(fp_w, bib, orders):
         else:
             for kb in bibnew[kn].keys():
                 bib_c = bibnew[kn][kb]
-                text = '**%s** \n' % bib_c['title']
-                text += '%s \n' % bib_c['author']
+                text = '**%s** <br>\n' % bib_c['title'].replace('{','').replace('}','')
+                text += '%s <br>\n' % bib_c['author']
                 text += '*%s*, ' % bib_c['journal'] if 'journal' in bib_c.keys() else '*%s*, ' % bib_c['booktitle']
-                text += '%s \n' % bib_c['year']
+                text += '%s <br>\n' % bib_c['year']
                 text += '**\[[Paper \(link\)](%s)\]**' % ('https://doi.org/'+bib_c['doi']) if 'doi' in bib_c.keys() else ''
                 text += ' &ensp; **\[[Supplementary](%s)\]**' % bib_c['supplementary'] if 'supplementary' in bib_c.keys() else ''
                 text += ' &ensp; **\[[Code](%s)\]**' % bib_c['code'] if 'code' in bib_c.keys() else ''
-                text += '\n'
+                text += '<br>\n'
 
                 text += '<details> ' \
                         '<summary>Abstract</summary> ' \
@@ -93,12 +93,6 @@ def process_publications(fp_w, bib, orders):
                 fp_w.write(text)
                 print(text)
 
-
-
-
-
-def write_publication(fp, bib, att):
-    text = '# Results (Publications) <a name="results"></a>\n'
 
 if __name__=='__main__':
     bibtex_dict = OrderedDict(bibtexparser.load(open("_data/reference.bib")).entries_dict)
@@ -113,6 +107,8 @@ if __name__=='__main__':
     write_frontmatter(fp_w)
     write_navigation(fp_w)
     write_people(fp_w, people_yaml)
+    write_goal(fp_w)
+    fp_w.write('# Results (Publications) <a name="results"></a>\n')
     # fp_w.write('<h2 id="test-page">Test page</h2>\n')
 
     # 'order': None (just group), 'ascend', 'descend', [list]
