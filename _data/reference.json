@@ -1,4 +1,20 @@
 {
+  "2023ICIP_Zhang_uwfeyeball":
+  {
+    "type": "engineering",
+    "topic": "retinal_alignment"
+  },
+  "2023Eye_Kalaw_composite":
+  {
+    "type": "clinical",
+    "topic": "retinal_alignment"
+  },
+  "2023OSLIR_Cavichini_sidebyside":
+  {
+    "type": "clinical",
+    "topic": "retinal_alignment"
+  },
+
   "2022TIP_An_selfsupervise":
   {
     "type": "engineering",

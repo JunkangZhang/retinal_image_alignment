@@ -11,8 +11,9 @@ tags_mapping = {
     'clinical': {'show': 'Clinical', 'backcolor': '#ffeff7', 'fontcolor':'#e85aad'},
 }
 
-def write_frontmatter(fp):
-    text = '''---\npermalink: /test/\n---\n\n'''
+def write_frontmatter(fp, link='test'):
+    link = link + '/' if not link.endswith('/') and len(link)>1 else link
+    text = '''---\npermalink: /%s\n---\n\n''' % link
     fp.write(text)
 
 def write_navigation(fp):
@@ -150,11 +151,11 @@ if __name__=='__main__':
     for k1 in reference_json.keys():
         for k2 in reference_json[k1].keys():
             bibtex_dict[k1][k2] = reference_json[k1][k2]
-    people_yaml = yaml.load(open('_data/people.yml'))
+    people_yaml = yaml.safe_load(open('_data/people.yml'))
     print(' ')
 
-    fp_w = open('test.md', 'w')
-    write_frontmatter(fp_w)
+    fp_w = open('index.md', 'w')
+    write_frontmatter(fp_w, '')
     write_navigation(fp_w)
     write_people(fp_w, people_yaml)
     write_goal(fp_w)
